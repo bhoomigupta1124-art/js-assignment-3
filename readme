@@ -1,0 +1,29 @@
+# JavaScript Assignment
+
+## Tasks Completed:
+1. Second Largest Number without sorting
+2. Unique Elements from two arrays
+3. Student Score Analysis
+4. Countdown Timer (1 hour)
+
+## Technologies Used:
+- HTML
+- CSS
+- JavaScript
+
+## Explanation:
+
+### Task 1:
+Used loop to track largest and second largest values.
+
+### Task 2:
+Combined arrays and filtered unique elements.
+
+### Task 3:
+Calculated average using reduce() and found top student.
+
+### Task 4:
+Created timer using setInterval with start, pause, reset.
+
+## How to Run:
+Open index.html in browser and check console/output.
