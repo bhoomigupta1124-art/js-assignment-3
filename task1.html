@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Tasks</title>
+</head>
+<body>
+
+  <h2>Check Output in Console (Right click → Inspect → Console)</h2>
+
+  <script>
+    // ================= TASK 1 =================
+    let arr = [23, 45, 67, 89, 12, 90, 44];
+
+    let largest = -Infinity;
+    let secondLargest = -Infinity;
+
+    for (let num of arr) {
+      if (num > largest) {
+        secondLargest = largest;
+        largest = num;
+      } else if (num > secondLargest && num !== largest) {
+        secondLargest = num;
+      }
+    }
+
+    console.log("Task 1 - Second Largest:", secondLargest);
+
+
+    // ================= TASK 2 =================
+    function getUnique(arr1, arr2) {
+      let combined = [...arr1, ...arr2];
+      let unique = [];
+
+      for (let i = 0; i < combined.length; i++) {
+        if (combined.indexOf(combined[i]) === combined.lastIndexOf(combined[i])) {
+          unique.push(combined[i]);
+        }
+      }
+
+      return unique;
+    }
+
+    console.log("Task 2 - Unique Elements:", getUnique([1,2,3], [2,3,4,5]));
+
+
+    // ================= TASK 3 =================
+    let students = [
+      { name: 'Alice', age: 22, scores: [78, 85, 92] },
+      { name: 'Bob', age: 20, scores: [88, 90, 76] },
+      { name: 'Charlie', age: 21, scores: [95, 80, 85] }
+    ];
+
+    function analyzeStudents(students) {
+      let topStudent = "";
+      let highestAvg = 0;
+
+      students.forEach(student => {
+        let sum = student.scores.reduce((a, b) => a + b, 0);
+        let avg = sum / student.scores.length;
+
+        console.log(student.name + " Average:", avg);
+
+        if (avg > highestAvg) {
+          highestAvg = avg;
+          topStudent = student.name;
+        }
+      });
+
+      console.log("Top Student:", topStudent, "with average", highestAvg);
+    }
+
+    analyzeStudents(students);
+  </script>
+
+</body>
+</html>
