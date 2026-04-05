@@ -1,0 +1,49 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #f0f4f8; /* Soft background instead of harsh red */
+}
+
+h1 {
+  color: #333;
+}
+
+.box {
+  background: white;
+  margin: 30px auto;
+  padding: 20px;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #007BFF;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+button:hover {
+  background: #0056b3;
+}
+
+/* Active (click feedback) */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Timer running effect */
+.running {
+  color: green;
+}
+
+.paused {
+  color: orange;
+}

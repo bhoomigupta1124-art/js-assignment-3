@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>JavaScript Assignment</h1>
+
+  <!-- Output Section -->
+  <div class="box">
+    <h2>Task Outputs</h2>
+    <button onclick="runTasks()">Run Task 1, 2, 3</button>
+    <pre id="output"></pre>
+  </div>
+
+  <!-- Timer Section -->
+  <div class="box">
+    <h2>Countdown Timer (1 Hour)</h2>
+    <h1 id="timer">60:00</h1>
+
+    <button onclick="startTimer()" id="startBtn">Start</button>
+    <button onclick="pauseTimer()" id="pauseBtn">Pause</button>
+    <button onclick="resetTimer()" id="resetBtn">Reset</button>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
